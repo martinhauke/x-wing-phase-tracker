@@ -14,12 +14,12 @@ type UsePhase = {
 
 const planningPhase: Phase = {
   name: 'Planning Phase',
-  actions: ['Set maneuver dials'],
+  actions: ['Set maneuver dials', 'Roll for initiative'],
 }
 
 const systemPhase: Phase = {
   name: 'System Phase',
-  actions: ['Decloak', 'Drop bomb'],
+  actions: ['Decloak', 'Drop/Deploy devices'],
 }
 
 const activationPhase: Phase = {
@@ -29,12 +29,18 @@ const activationPhase: Phase = {
 
 const engagementPhase: Phase = {
   name: 'Engagement Phase',
-  actions: ['perform attack'],
+  actions: ['Perform attack'],
 }
 
 const endPhase: Phase = {
   name: 'End Phase',
-  actions: ['remove tokens', 'flip charges'],
+  actions: [
+    'Abilities that occur "at the start of the End Phase"',
+    'Abilities that occur "during the End Phase"',
+    'All circular tokens are removed from all ships (green, then orange).',
+    'Each card with a recurring charge icon recovers that many charges. Each\n' +
+      'card with a negative recurring charge icon loses that many charges.',
+  ],
 }
 
 const phases: Phase[] = [

@@ -1,10 +1,12 @@
 import React, { memo } from 'react'
+import StyledHeader from './__styled__/Header'
+import Heading from './__styled__/Heading'
 
 const Header = () => {
   return (
-    <header>
-      <h1>X-Wing Phase Tracker</h1>
-    </header>
+    <StyledHeader>
+      <Heading>X-Wing Phase Tracker</Heading>
+    </StyledHeader>
   )
 }
 
