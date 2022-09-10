@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './Header'
-
-enum Phase {
-  Planning,
-  System,
-  Activation,
-  Engagement,
-  End,
-}
+import usePhase from './usePhase'
 
 function App() {
-  const [currentPhase, setCurrentPhase] = useState<Phase>(0)
+  const {currentPhase, nextPhase} = usePhase()
   return (
     <div>
       <Header/>
       <section>
-        {currentPhase}
-        <button onClick={e => setCurrentPhase(prev => (prev + 1) % 5)}>Next</button>
+          <div>{currentPhase.name}</div>
+        <button onClick={nextPhase}>Next</button>
       </section>
     </div>
   );
