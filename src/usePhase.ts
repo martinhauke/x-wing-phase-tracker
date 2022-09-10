@@ -35,7 +35,13 @@ const endPhase: Phase = {
   actions: ['remove tokens', 'flip charges'],
 }
 
-const phases: Phase[] = [planningPhase, systemPhase, activationPhase, engagementPhase, endPhase]
+const phases: Phase[] = [
+  planningPhase,
+  systemPhase,
+  activationPhase,
+  engagementPhase,
+  endPhase,
+]
 
 const usePhase = (): UsePhase => {
   const [currentPhase, setCurrentPhase] = useState<Phase>(phases[0])

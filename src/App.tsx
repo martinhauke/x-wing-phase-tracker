@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 import Header from './Header'
 import usePhase from './usePhase'
 
 function App() {
-  const {currentPhase, nextPhase} = usePhase()
+  const { currentPhase, nextPhase } = usePhase()
   return (
     <div>
-      <Header/>
+      <Header />
       <section>
-          <div>{currentPhase.name}</div>
+        <div>{currentPhase.name}</div>
         <button onClick={nextPhase}>Next</button>
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
