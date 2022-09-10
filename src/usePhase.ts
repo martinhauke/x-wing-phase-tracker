@@ -1,9 +1,11 @@
 import { useState } from 'react'
 
-type Phase = {
+export type Phase = {
   name: string
-  actions: string[]
+  actions: PhaseAction[]
 }
+
+export type PhaseAction = string
 
 type UsePhase = {
   currentPhase: Phase

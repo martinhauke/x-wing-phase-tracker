@@ -1,16 +1,17 @@
 import React from 'react'
 import Header from './Header'
 import usePhase from './usePhase'
+import PhaseTile from './PhaseTile'
 
 function App() {
   const { currentPhase, nextPhase } = usePhase()
   return (
     <div>
       <Header />
-      <section>
-        <div>{currentPhase.name}</div>
+      <main>
+        <PhaseTile currentPhase={currentPhase} />
         <button onClick={nextPhase}>Next</button>
-      </section>
+      </main>
     </div>
   )
 }
