@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/x-wing-phase-tracker/static/js/main.de5be3e5.js",
+    "index.html": "/x-wing-phase-tracker/index.html",
+    "main.de5be3e5.js.map": "/x-wing-phase-tracker/static/js/main.de5be3e5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.de5be3e5.js"
+  ]
+}
