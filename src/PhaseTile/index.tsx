@@ -2,6 +2,7 @@ import { memo } from 'react'
 import { Phase } from '../usePhase'
 import ActionList from './ActionList'
 import StyledPhaseTile from './__styled__/PhaseTile'
+import PhaseTitle from './__styled__/PhaseTitle'
 
 type PhaseProps = {
   currentPhase: Phase
@@ -10,7 +11,7 @@ type PhaseProps = {
 const PhaseTile = ({ currentPhase }: PhaseProps) => {
   return (
     <StyledPhaseTile>
-      <h2>{currentPhase.name}</h2>
+      <PhaseTitle>{currentPhase.name}</PhaseTitle>
       <ActionList actions={currentPhase.actions} />
     </StyledPhaseTile>
   )

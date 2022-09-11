@@ -5,15 +5,18 @@ const Button = styled.button`
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 20px 20px;
+
   width: 100%;
+  max-height: ${(props) => props.theme.nextButtonMaxHeight};
+
+  padding: ${(props) => props.theme.spaces.medium};
   font-size: 2em;
-  color: white;
-  background-color: #058;
   border: none;
-  
+  color: white;
+  background-color: ${(props) => props.theme.colors.affirm};
+
   &:active {
-    background-color: #27a;
+    background-color: ${(props) => props.theme.colors.affirmLight};
   }
 `
 

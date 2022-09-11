@@ -1,5 +1,6 @@
-import React, {memo} from 'react'
+import React, { memo } from 'react'
 import { PhaseAction } from '../usePhase'
+import List from './__styled__/List'
 import ListItem from './__styled__/ListItem'
 
 type ActionListProps = {
@@ -8,11 +9,11 @@ type ActionListProps = {
 
 const ActionList = ({ actions }: ActionListProps) => {
   return (
-    <ul>
+    <List>
       {actions.map((action) => (
         <ListItem key={action}>{action}</ListItem>
       ))}
-    </ul>
+    </List>
   )
 }
 
