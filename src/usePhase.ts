@@ -24,7 +24,7 @@ const systemPhase: Phase = {
 
 const activationPhase: Phase = {
   name: 'Activation Phase',
-  actions: ['Revieal dial', 'Execute maneuvers', 'Perform action'],
+  actions: ['Reveal dial', 'Execute maneuvers', 'Perform action'],
 }
 
 const engagementPhase: Phase = {
